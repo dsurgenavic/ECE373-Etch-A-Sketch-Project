@@ -125,7 +125,7 @@ void update_cursor_location(void);
 void write_pixel(void);
 	
 
-	
+
 
 
 #endif //STORAGE_H_

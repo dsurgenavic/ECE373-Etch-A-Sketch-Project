@@ -1,0 +1,14 @@
+Task names: inputs, storage, display
+Peripherals:
+	Knob 1 uses PB1, PB2
+	Knob 2 uses PB3, PB4
+	Up/Down Button uses PC13
+	DOGS display uses PA4, PA5, PA6, PA7, PA8
+Files:
+	inputs.h
+	storage.h
+	display.h
+Queues:
+	input_queue
+Semaphores:
+	display_data_semaphore
