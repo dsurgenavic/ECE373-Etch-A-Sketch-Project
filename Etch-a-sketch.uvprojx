@@ -10,6 +10,7 @@
       <TargetName>Target 1</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
+      <pCCUsed>6160000::V6.16::ARMCLANG</pCCUsed>
       <uAC6>1</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -391,6 +392,21 @@
               <FileName>fsm_btn.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\fsm_btn.h</FilePath>
+            </File>
+            <File>
+              <FileName>storage.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\storage.h</FilePath>
+            </File>
+            <File>
+              <FileName>storage.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\storage.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\main.c</FilePath>
             </File>
           </Files>
         </Group>

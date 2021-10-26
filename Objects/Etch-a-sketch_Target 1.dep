@@ -1,0 +1,40 @@
+Dependencies for Project 'Etch-a-sketch', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6160000::V6.16::ARMCLANG
+F (.\fsm_btn.c)(0x615B3C5E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Users/dsurg/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/dsurg/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32L053xx -D_RTE_-o ./objects/fsm_btn.o -MD)
+I (C:\Users\dsurg\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x5F06F3CA)
+I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0plus.h)(0x60D491A2)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6035B090)
+I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D491A2)
+I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D491A2)
+I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D491A2)
+I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h)(0x60D491A2)
+I (C:\Users\dsurg\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x5F06F3CA)
+I (fsm_btn.h)(0x6150D227)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x6035B090)
+F (.\fsm_btn.h)(0x6150D227)()
+F (.\storage.h)(0x61785057)()
+F (.\storage.c)(0x61785058)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Users/dsurg/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/dsurg/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32L053xx -D_RTE_-o ./objects/storage.o -MD)
+I (storage.h)(0x61785057)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6035B090)
+F (.\main.c)(0x6178514A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Users/dsurg/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/dsurg/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32L053xx -D_RTE_-o ./objects/main.o -MD)
+I (C:\Users\dsurg\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x5F06F3CA)
+I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0plus.h)(0x60D491A2)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6035B090)
+I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D491A2)
+I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D491A2)
+I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D491A2)
+I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h)(0x60D491A2)
+I (C:\Users\dsurg\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x5F06F3CA)
+I (fsm_btn.h)(0x6150D227)
+I (storage.h)(0x61785057)
+F (RTE\Device\STM32L053R8Tx\startup_stm32l053xx.s)(0x5F06F3CA)(--target=arm-arm-none-eabi -mcpu=cortex-m0plus -masm=auto -c-gdwarf-3 -Wa,armasm,--pd,"__EVAL SETA 1"-I./RTE/_Target_1-IC:/Users/dsurg/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/dsurg/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 535" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32L053xx SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_stm32l053xx.o)
+F (RTE\Device\STM32L053R8Tx\system_stm32l0xx.c)(0x5F06F3CA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Users/dsurg/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/dsurg/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32L053xx -D_RTE_-o ./objects/system_stm32l0xx.o -MD)
+I (C:\Users\dsurg\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x5F06F3CA)
+I (C:\Users\dsurg\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x5F06F3CA)
+I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0plus.h)(0x60D491A2)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6035B090)
+I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D491A2)
+I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D491A2)
+I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D491A2)
+I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h)(0x60D491A2)
+I (C:\Users\dsurg\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x5F06F3CA)
