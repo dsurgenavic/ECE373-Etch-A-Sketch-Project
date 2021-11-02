@@ -1,5 +1,10 @@
 #include "storage.h"
 
+uint8_t display_mem[102][8];
+static uint16_t cursor_x_pos;
+static uint16_t cursor_y_pos;
+static bool pen_up_down;
+
 void init_display_mem(void) {
 	for(uint8_t i = 0; i < 102; i++) {
 		for(uint8_t j = 0; j < 8; j++) {
@@ -8,8 +13,31 @@ void init_display_mem(void) {
 	}
 }
 
-void update_cursor_location() {
-	
+void update_cursor_location(void) {
+	int16_t data;
+	if(!read_q(&knob_queue, &data)) return;
+	switch(data){
+		case(0): //TODO: Change '0' to x knob turning clockwise
+			cursor_x_pos = (cursor_x_pos >= 101) ? 101 : (cursor_x_pos + 1);
+			break;
+		case(1): //TODO: Change '1' to x knob turning counterclockwise
+			cursor_x_pos = (cursor_x_pos <= 0) ? 0 : (cursor_x_pos - 1);
+			break;
+		case(2): //TODO: Change '2' to y knob turning clockwise
+			cursor_y_pos = (cursor_y_pos >= 63) ? 63 : (cursor_y_pos + 1);
+			break;
+		case(3): //TODO: Change '3' to y knob turning counterclockwise
+			cursor_y_pos = (cursor_y_pos <= 0) ? 0 : (cursor_x_pos - 1);
+			break;
+		default:
+			break;
+	}
+}
+
+void toggle_pen(void) {
+	int16_t data;
+	if(!read_q(&button_queue, &data)) return;
+	if(data == 0) pen_up_down ^= pen_up_down;//TODO: Change '0' to button rising edge detected.
 }
 
 void write_storage() {
