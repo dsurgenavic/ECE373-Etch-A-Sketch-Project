@@ -786,11 +786,11 @@ Image component sizes
         48         12          0          0         36        906   main.o
         22          0          0          0          0       1578   queue.o
         56         26        192          0       1536        680   startup_stm32l053xx.o
-        20          4          0          0        816       1418   storage.o
+        20          4          0          0        816       1465   storage.o
         80         16          0          0          0       2592   system_stm32l0xx.o
 
     ----------------------------------------------------------------------
-       228         58        208          0       2392       7174   Object Totals
+       228         58        208          0       2392       7221   Object Totals
          0          0         16          0          0          0   (incl. Generated)
          2          0          0          0          4          0   (incl. Padding)
 
@@ -852,8 +852,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      1100        136        208          0       2488       7966   Grand Totals
-      1100        136        208          0       2488       7966   ELF Image Totals
+      1100        136        208          0       2488       8013   Grand Totals
+      1100        136        208          0       2488       8013   ELF Image Totals
       1100        136        208          0          0          0   ROM Totals
 
 ==============================================================================

@@ -3,12 +3,6 @@
 #include "storage.h"
 #include "queue.h"
 
-/*QUEUES NEEDED:
- *Inputs
- *SEMAPHORES
- *display_data
- */
-
 queue_t knob_queue;
 queue_t button_queue;
 queue_t display_mem_semaphore;

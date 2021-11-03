@@ -40,6 +40,17 @@ void toggle_pen(void) {
 	if(data == 0) pen_up_down ^= pen_up_down;//TODO: Change '0' to button rising edge detected.
 }
 
-void write_storage() {
-
+void write_storage(void) {
+	if(!pen_up_down) return;
+	
+	uint16_t page = cursor_y_pos / 8;
+	uint16_t page_y = cursor_y_pos % 8;
+	
+	bool check = write_q(&display_mem_semaphore, 1);
+	if(!check) return;
+	
+	display_mem[cursor_x_pos][page] |= 1<<page_y;
+	
+	int16_t dummy;
+	check = read_q(&display_mem_semaphore, &dummy);
 }
