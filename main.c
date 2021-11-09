@@ -2,9 +2,9 @@
 #include "fsm_btn.h"
 #include "storage.h"
 #include "queue.h"
+#include "knob.h"
 
-queue_t knob_queue;
-queue_t button_queue;
+queue_t input_queue;
 queue_t display_mem_semaphore;
 
 void gpio_init(void);
@@ -15,8 +15,7 @@ void gpio_init(void) {
 }
 
 int main(void) {
-	init_queue(&knob_queue, 4);
-	init_queue(&button_queue, 2);
+	init_queue(&input_queue, 4);
 	init_queue(&display_mem_semaphore, 1);
 	init_display_mem();
 	return 0;

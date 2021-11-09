@@ -2,7 +2,7 @@
 
 void init_queue(queue_t * ptr_to_existing_q, int max_items)
 {
-    int16_t * new_buff = (int16_t *const) malloc((max_items+1) * sizeof(int16_t));
+    int16_t * new_buff = (int16_t *const) malloc((max_items + 1) * sizeof(int16_t));
     ptr_to_existing_q ->buffer = new_buff;
     ptr_to_existing_q ->head = 0;
     ptr_to_existing_q ->tail = 0;

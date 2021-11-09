@@ -10,8 +10,7 @@
 extern uint8_t display_mem[102][8];
 
 //Declarations of queues this object uses
-extern queue_t knob_queue;
-extern queue_t button_queue;
+extern queue_t input_queue;
 extern queue_t display_mem_semaphore;
 
 void init_display_mem(void);
