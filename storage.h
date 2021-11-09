@@ -1,4 +1,5 @@
 #include "stdint.h"
+#include "queue.h"
 
 #ifndef STORAGE_H_
 #define STORAGE_H_
@@ -7,10 +8,10 @@
 //the program will use this array. This array will be written to and read from by the program.
 //The display driver will read from this and write to the display
 extern uint8_t display_mem[102][8];
-	
 
-static uint8_t cursor_x_pos;
-static uint8_t cursor_y_pos;
+//Declarations of queues this object uses
+extern queue_t input_queue;
+extern queue_t display_mem_semaphore;
 
 void init_display_mem(void);
 
@@ -21,7 +22,7 @@ void init_display_mem(void);
 //and will blink an area in the display array depending on the coordinates.a
 void update_cursor_location(void);
 
-
+void toggle_pen(void);
 
 //This function will update the display array.
 //It will use the cursor's current location and whether the pen

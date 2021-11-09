@@ -2,16 +2,10 @@
 #include "fsm_btn.h"
 #include "storage.h"
 #include "queue.h"
+#include "knob.h"
 
-/*QUEUES NEEDED:
- *Inputs
- *SEMAPHORES
- *display_data
- */
-
-extern queue_t knob_queue;
-extern queue_t button_queue;
-extern queue_t display_data_semaphore;
+queue_t input_queue;
+queue_t display_mem_semaphore;
 
 void gpio_init(void);
 int main(void);
@@ -21,8 +15,8 @@ void gpio_init(void) {
 }
 
 int main(void) {
-	init_queue(&knob_queue, 4);
-	init_queue(&button_queue, 2);
-	init_queue(&display_data_semaphore, 1);
+	init_queue(&input_queue, 4);
+	init_queue(&display_mem_semaphore, 1);
+	init_display_mem();
 	return 0;
 }

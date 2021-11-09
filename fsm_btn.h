@@ -1,5 +1,6 @@
 // Implement a Mealy state machine in C.
-
+#ifndef FSM_BTN_H_
+#define FSM_BTN_H_
 
 #include "stm32l053xx.h"
 #include <stdint.h>
@@ -29,5 +30,5 @@ enum btn_level read_btn(struct btn_struct *pb);
     // The state-transition table or Moore diagram written into C code
 enum btn_edge update_btn(struct btn_struct *pb);
 
-
+#endif
 

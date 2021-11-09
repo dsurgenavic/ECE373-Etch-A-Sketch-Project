@@ -418,6 +418,16 @@
               <FileType>1</FileType>
               <FilePath>.\queue.c</FilePath>
             </File>
+            <File>
+              <FileName>knob.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\knob.h</FilePath>
+            </File>
+            <File>
+              <FileName>knob.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\knob.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
