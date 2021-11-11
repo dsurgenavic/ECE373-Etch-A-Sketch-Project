@@ -2,7 +2,7 @@
 #ifndef FSM_BTN_H_
 #define FSM_BTN_H_
 
-#include "stm32l053xx.h"
+//#include "stm32l053xx.h"
 #include <stdint.h>
 
     // The state alphabet:

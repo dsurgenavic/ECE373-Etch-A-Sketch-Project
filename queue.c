@@ -1,8 +1,8 @@
 #include "queue.h"
 
-void init_queue(queue_t * ptr_to_existing_q, int max_items)
+void init_queue(queue_t * ptr_to_existing_q, uint16_t max_items)
 {
-    int16_t * new_buff = (int16_t *const) malloc((max_items + 1) * sizeof(int16_t));
+    uint16_t * new_buff = (uint16_t *const) malloc((max_items + 1U) * sizeof(uint16_t));
     ptr_to_existing_q ->buffer = new_buff;
     ptr_to_existing_q ->head = 0;
     ptr_to_existing_q ->tail = 0;
