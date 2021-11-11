@@ -28,7 +28,8 @@ void toggle_pen(void);
 //It will use the cursor's current location and whether the pen
 //is up or down to write a pixel in the display array.
 void write_storage(void);
-	
+
+void update_storage(void);
 
 
 

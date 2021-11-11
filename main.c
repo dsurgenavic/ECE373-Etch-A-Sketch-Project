@@ -19,5 +19,8 @@ int main(void) {
 	init_queue(&input_queue, 4);
 	init_queue(&display_mem_semaphore, 1);
 	init_display_mem();
-	return 0;
+	while(1) {
+		update_inputs();
+		update_storage();
+	}
 }

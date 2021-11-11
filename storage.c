@@ -58,3 +58,9 @@ void write_storage(void) {
 	int16_t dummy;
 	check = read_q(&display_mem_semaphore, &dummy);
 }
+
+void update_storage(void) {
+	toggle_pen();
+	update_cursor_location();
+	write_storage();
+}
