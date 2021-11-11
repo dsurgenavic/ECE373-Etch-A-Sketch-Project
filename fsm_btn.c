@@ -15,7 +15,7 @@ void init_btn(uint32_t mask_for_btn,
 	pb->state = UP;
 	pb->mask_for_btn = mask_for_btn;
 	pb->pin_ptr = pin_ptr;
- }
+}
 
 // Collect input from HW and translate to state-input-alphabet 
 enum btn_level read_btn(struct btn_struct *pb) // Correct for ACTIVE-LOW.

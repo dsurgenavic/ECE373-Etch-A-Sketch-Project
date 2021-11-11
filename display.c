@@ -2,7 +2,7 @@
 #include "display.h"
 #include "storage.h"
 
-
+/*
 void init_gpio(void) { 
 	RCC->IOPENR |= RCC_IOPENR_GPIOAEN; 
 	GPIOA->MODER &= ~(GPIO_MODER_MODE4_Msk); //These lines enable the select line for the SPI 
@@ -25,7 +25,7 @@ void init_spi(void) {
 	SPI1->CR1 |= SPI_CR1_SPE; 
 	return; 
 } 
-
+*/
 void init_dogs() { 
 	for(volatile int i = 0; i < 6; i++) {} 
 	GPIOA->ODR &= ~(1U << 8U); 
@@ -64,7 +64,7 @@ void send_packet(uint32_t packet, uint8_t CD) {
 	return; 
 } 
 
-void clear_dogs(void) { 
+/*void clear_dogs(void) { 
 	for(volatile uint32_t z=0; z<7; z++) //for page address
 		{
 			send_packet(0xB0&z, 0);
@@ -79,7 +79,6 @@ void clear_dogs(void) {
 		}
 	}
 		
-/*
 	send_packet(0xB1, 0);
 	for(volatile uint32_t y=0; y<102; y++)
 		{
@@ -150,9 +149,9 @@ void clear_dogs(void) {
 			
 			send_packet(0x00, 1);
 		}
-		*/
+		
 }
-
+*/
 
 void draw_dogs(){
 	for(volatile uint32_t z=0; z<7; z++) //for page address
@@ -162,26 +161,16 @@ void draw_dogs(){
 				{
 					volatile uint32_t lsb = y & 0x0F;
 					volatile uint32_t msb = ((y & 0xF0) >> 4) | 0x10;
+					
+					volatile uint32_t val = display_mem[y][z];
 					send_packet(lsb, 0); 
 					send_packet(msb, 0); 
 					
-					//send_packet(0x00, 1); from clear fn
 					
-					//volatile uint32_t val = current_screen[y][z];
-					//send_packet(0xB&val, 1)
-					
+					send_packet(0xB&val, 1);
 					
 				}
 		}
 }
 
-int static main() { 
-	init_gpio(); 
-	init_spi(); 
-	init_dogs(); 
-  
-/*	while(1) { 
-		draw_dogs();
-	} 
-*/
-}
+

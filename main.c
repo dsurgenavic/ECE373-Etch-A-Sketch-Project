@@ -3,6 +3,7 @@
 #include "storage.h"
 #include "queue.h"
 #include "knob.h"
+#include "display.h"
 
 queue_t input_queue;
 queue_t display_mem_semaphore;
