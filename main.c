@@ -15,14 +15,14 @@ void init_gpio(void) {
 	GPIOC->MODER &= ~(GPIO_MODER_MODE13_Msk); //Enable GPIO C13 for the pen button
 	GPIOC->MODER |= GPIO_MODER_MODE13_0;
 	
-	GPIOB->MODER &= ~(GPIO_MODER_MODE1_Msk); //Enable GPIO B1 for one of the buttons
+	GPIOB->MODER &= ~(GPIO_MODER_MODE1_Msk); //Enable GPIO B1 & B2 for one of the buttons
 	GPIOB->MODER |= GPIO_MODER_MODE1_0;
-	GPIOB->MODER &= ~(GPIO_MODER_MODE2_Msk); //Enable GPIO B2 for one of the buttons
+	GPIOB->MODER &= ~(GPIO_MODER_MODE2_Msk);
 	GPIOB->MODER |= GPIO_MODER_MODE2_0;
 	
-	GPIOB->MODER &= ~(GPIO_MODER_MODE3_Msk); //Enable GPIO B3 for the other button
+	GPIOB->MODER &= ~(GPIO_MODER_MODE3_Msk); //Enable GPIO B3 & B4 for the other button
 	GPIOB->MODER |= GPIO_MODER_MODE3_0;
-	GPIOB->MODER &= ~(GPIO_MODER_MODE4_Msk); //Enable GPIO B4 for the other button
+	GPIOB->MODER &= ~(GPIO_MODER_MODE4_Msk);
 	GPIOB->MODER |= GPIO_MODER_MODE4_0;
 	
 	GPIOA->MODER &= ~(GPIO_MODER_MODE6_Msk); //Enable GPIO A6 for the CD line on the display
