@@ -19,8 +19,14 @@ int main(void) {
 	init_queue(&input_queue, 4);
 	init_queue(&display_mem_semaphore, 1);
 	init_display_mem();
+	//initialization for display
+	init_gpio();
+	init_spi();
+	init_dogs();
+	
 	while(1) {
 		update_inputs();
 		update_storage();
+		draw_dogs();
 	}
 }

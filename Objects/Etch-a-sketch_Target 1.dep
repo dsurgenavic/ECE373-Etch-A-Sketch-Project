@@ -1,6 +1,5 @@
 Dependencies for Project 'Etch-a-sketch', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 6160000::V6.16::ARMCLANG
-<<<<<<< HEAD
 F (.\fsm_btn.c)(0x618AE165)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I./RTE/_Target_1-IC:/Users/maria/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/maria/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32L053xx -D_RTE_-o ./objects/fsm_btn.o -MD)
 I (C:\Users\maria\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x5F0701DA)
 I (C:\Users\maria\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0plus.h)(0x60D49FB2)
@@ -13,15 +12,15 @@ I (C:\Users\maria\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS
 I (fsm_btn.h)(0x618AE031)
 I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x6035BEA0)
 F (.\fsm_btn.h)(0x618AE031)()
-F (.\storage.h)(0x618AD7B9)()
-F (.\storage.c)(0x618AD7B9)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I./RTE/_Target_1-IC:/Users/maria/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/maria/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32L053xx -D_RTE_-o ./objects/storage.o -MD)
-I (storage.h)(0x618AD7B9)
+F (.\storage.h)(0x618D844D)()
+F (.\storage.c)(0x618D844D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I./RTE/_Target_1-IC:/Users/maria/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/maria/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32L053xx -D_RTE_-o ./objects/storage.o -MD)
+I (storage.h)(0x618D844D)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6035BEA0)
-I (queue.h)(0x618AE326)
+I (queue.h)(0x618AF0BD)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x6035BE9A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x6035BEA4)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x6035BEA0)
-F (.\main.c)(0x618ADC28)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I./RTE/_Target_1-IC:/Users/maria/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/maria/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32L053xx -D_RTE_-o ./objects/main.o -MD)
+F (.\main.c)(0x618F0320)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I./RTE/_Target_1-IC:/Users/maria/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/maria/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32L053xx -D_RTE_-o ./objects/main.o -MD)
 I (C:\Users\maria\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x5F0701DA)
 I (C:\Users\maria\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0plus.h)(0x60D49FB2)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6035BEA0)
@@ -31,21 +30,21 @@ I (C:\Users\maria\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cms
 I (C:\Users\maria\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h)(0x60D49FB2)
 I (C:\Users\maria\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x5F0701DA)
 I (fsm_btn.h)(0x618AE031)
-I (storage.h)(0x618AD7B9)
-I (queue.h)(0x618AE326)
+I (storage.h)(0x618D844D)
+I (queue.h)(0x618AF0BD)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x6035BE9A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x6035BEA4)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x6035BEA0)
-I (knob.h)(0x618AD7B9)
-I (display.h)(0x618AE3AD)
-F (.\queue.h)(0x618AE326)()
+I (knob.h)(0x618D844D)
+I (display.h)(0x618F031E)
+F (.\queue.h)(0x618AF0BD)()
 F (.\queue.c)(0x618AE303)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I./RTE/_Target_1-IC:/Users/maria/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/maria/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32L053xx -D_RTE_-o ./objects/queue.o -MD)
-I (queue.h)(0x618AE326)
+I (queue.h)(0x618AF0BD)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x6035BE9A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x6035BEA4)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6035BEA0)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x6035BEA0)
-F (.\knob.h)(0x618AD7B9)()
+F (.\knob.h)(0x618D844D)()
 F (.\knob.c)(0x618AE17A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I./RTE/_Target_1-IC:/Users/maria/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/maria/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32L053xx -D_RTE_-o ./objects/knob.o -MD)
 I (C:\Users\maria\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x5F0701DA)
 I (C:\Users\maria\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0plus.h)(0x60D49FB2)
@@ -55,14 +54,14 @@ I (C:\Users\maria\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cms
 I (C:\Users\maria\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D49FB2)
 I (C:\Users\maria\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h)(0x60D49FB2)
 I (C:\Users\maria\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x5F0701DA)
-I (knob.h)(0x618AD7B9)
+I (knob.h)(0x618D844D)
 I (fsm_btn.h)(0x618AE031)
-I (queue.h)(0x618AE326)
+I (queue.h)(0x618AF0BD)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x6035BE9A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x6035BEA4)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x6035BEA0)
-F (.\display.c)(0x618ADFB9)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I./RTE/_Target_1-IC:/Users/maria/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/maria/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32L053xx -D_RTE_-o ./objects/display.o -MD)
-I (display.h)(0x618AE3AD)
+F (.\display.c)(0x618F0483)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I./RTE/_Target_1-IC:/Users/maria/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/maria/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32L053xx -D_RTE_-o ./objects/display.o -MD)
+I (display.h)(0x618F031E)
 I (C:\Users\maria\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x5F0701DA)
 I (C:\Users\maria\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0plus.h)(0x60D49FB2)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6035BEA0)
@@ -71,12 +70,12 @@ I (C:\Users\maria\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cms
 I (C:\Users\maria\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D49FB2)
 I (C:\Users\maria\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h)(0x60D49FB2)
 I (C:\Users\maria\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x5F0701DA)
-I (storage.h)(0x618AD7B9)
-I (queue.h)(0x618AE326)
+I (storage.h)(0x618D844D)
+I (queue.h)(0x618AF0BD)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x6035BE9A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x6035BEA4)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x6035BEA0)
-F (.\display.h)(0x618AE3AD)()
+F (.\display.h)(0x618F031E)()
 F (RTE\Device\STM32L053R8Tx\startup_stm32l053xx.s)(0x618AD7B9)(--target=arm-arm-none-eabi -mcpu=cortex-m0plus -masm=auto -c-gdwarf-4 -Wa,armasm,--pd,"__EVAL SETA 1"-I./RTE/_Target_1-IC:/Users/maria/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/maria/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 536" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32L053xx SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_stm32l053xx.o)
 F (RTE\Device\STM32L053R8Tx\system_stm32l0xx.c)(0x618AD7B9)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I./RTE/_Target_1-IC:/Users/maria/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/maria/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32L053xx -D_RTE_-o ./objects/system_stm32l0xx.o -MD)
 I (C:\Users\maria\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x5F0701DA)
@@ -88,75 +87,3 @@ I (C:\Users\maria\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cms
 I (C:\Users\maria\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D49FB2)
 I (C:\Users\maria\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h)(0x60D49FB2)
 I (C:\Users\maria\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x5F0701DA)
-=======
-F (.\fsm_btn.c)(0x615B3C5E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I./RTE/_Target_1-IC:/Users/dsurg/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/dsurg/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32L053xx -D_RTE_-o ./objects/fsm_btn.o -MD)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x5F06F3CA)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0plus.h)(0x60D491A2)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6035B090)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D491A2)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D491A2)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D491A2)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h)(0x60D491A2)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x5F06F3CA)
-I (fsm_btn.h)(0x618D79FD)
-I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x6035B090)
-F (.\fsm_btn.h)(0x618D79FD)()
-F (.\storage.h)(0x618D7ACB)()
-F (.\storage.c)(0x618D7BE0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I./RTE/_Target_1-IC:/Users/dsurg/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/dsurg/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32L053xx -D_RTE_-o ./objects/storage.o -MD)
-I (storage.h)(0x618D7ACB)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6035B090)
-I (queue.h)(0x6181941D)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x6035B08A)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x6035B094)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x6035B090)
-F (.\main.c)(0x618D83A0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I./RTE/_Target_1-IC:/Users/dsurg/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/dsurg/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32L053xx -D_RTE_-o ./objects/main.o -MD)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x5F06F3CA)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0plus.h)(0x60D491A2)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6035B090)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D491A2)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D491A2)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D491A2)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h)(0x60D491A2)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x5F06F3CA)
-I (fsm_btn.h)(0x618D79FD)
-I (storage.h)(0x618D7ACB)
-I (queue.h)(0x6181941D)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x6035B08A)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x6035B094)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x6035B090)
-I (knob.h)(0x618D7BE1)
-F (.\queue.h)(0x6181941D)()
-F (.\queue.c)(0x618D79FD)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I./RTE/_Target_1-IC:/Users/dsurg/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/dsurg/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32L053xx -D_RTE_-o ./objects/queue.o -MD)
-I (queue.h)(0x6181941D)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x6035B08A)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x6035B094)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6035B090)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x6035B090)
-F (.\knob.h)(0x618D7BE1)()
-F (.\knob.c)(0x618D79FD)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I./RTE/_Target_1-IC:/Users/dsurg/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/dsurg/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32L053xx -D_RTE_-o ./objects/knob.o -MD)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x5F06F3CA)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0plus.h)(0x60D491A2)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6035B090)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D491A2)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D491A2)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D491A2)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h)(0x60D491A2)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x5F06F3CA)
-I (knob.h)(0x618D7BE1)
-I (fsm_btn.h)(0x618D79FD)
-I (queue.h)(0x6181941D)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x6035B08A)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x6035B094)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x6035B090)
-F (RTE\Device\STM32L053R8Tx\startup_stm32l053xx.s)(0x5F06F3CA)(--target=arm-arm-none-eabi -mcpu=cortex-m0plus -masm=auto -c-gdwarf-3 -Wa,armasm,--pd,"__EVAL SETA 1"-I./RTE/_Target_1-IC:/Users/dsurg/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/dsurg/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 535" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32L053xx SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_stm32l053xx.o)
-F (RTE\Device\STM32L053R8Tx\system_stm32l0xx.c)(0x5F06F3CA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I./RTE/_Target_1-IC:/Users/dsurg/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/dsurg/AppData/Local/Arm/Packs/Keil/STM32L0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32L0xx/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32L053xx -D_RTE_-o ./objects/system_stm32l0xx.o -MD)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h)(0x5F06F3CA)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h)(0x5F06F3CA)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0plus.h)(0x60D491A2)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6035B090)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D491A2)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D491A2)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D491A2)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h)(0x60D491A2)
-I (C:\Users\dsurg\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h)(0x5F06F3CA)
->>>>>>> 88de0f0cbca5460fd29af162a7d302a015c375cd
