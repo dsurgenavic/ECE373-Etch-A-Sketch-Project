@@ -18,6 +18,7 @@ void init_gpio(void) {
 	GPIOA->ODR &= ~(1U << 8); //Assert reset high 
   return; 
 } 
+*/
   
 void init_spi(void) { 
 	RCC->APB2ENR |= RCC_APB2ENR_SPI1EN; 
@@ -25,7 +26,7 @@ void init_spi(void) {
 	SPI1->CR1 |= SPI_CR1_SPE; 
 	return; 
 } 
-*/
+
 void init_dogs() { 
 	for(volatile int i = 0; i < 6; i++) {} 
 	GPIOA->ODR &= ~(1U << 8U); 
