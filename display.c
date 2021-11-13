@@ -2,6 +2,9 @@
 #include "display.h"
 #include "storage.h"
 extern queue_t display_mem_semaphore;
+extern uint16_t cursor_x_pos;
+extern uint16_t cursor_y_pos;
+extern uint8_t display_mem[102][8];
 
 /*void init_gpio(void) { 
 	RCC->IOPENR |= RCC_IOPENR_GPIOAEN; 
@@ -66,10 +69,10 @@ void send_packet(uint32_t packet, uint8_t CD) {
 
 
 void draw_dogs(){
-	bool check = write_q(&display_mem_semaphore, 1);
+	/*bool check = write_q(&display_mem_semaphore, 1);
 	if (check == false) return;
 
-	for(volatile uint32_t z=0; z<7; z++) //for page address
+	for(volatile uint32_t z=0; z<8; z++) //for page address
 		{
 			send_packet(0xB0|z, 0);
 			for(volatile uint32_t y=0; y<102; y++) //for column address
@@ -87,7 +90,17 @@ void draw_dogs(){
 				}
 		}
 		int16_t dummy;
-		check = read_q(&display_mem_semaphore, &dummy);
+		check = read_q(&display_mem_semaphore, &dummy); */
+	
+	uint8_t page = cursor_y_pos / 8;
+	send_packet(0xB0 | (0x0F & page), 0);
+	volatile uint32_t lsb = cursor_x_pos & 0x0F;
+	volatile uint32_t msb = ((cursor_x_pos & 0xF0) >> 4) | 0x10;
+	send_packet(lsb, 0); 
+	send_packet(msb, 0);
+	
+	send_packet(display_mem[cursor_x_pos][page], 1);
+	
 }
 
 

@@ -1,9 +1,9 @@
 #include "storage.h"
 
 uint8_t display_mem[102][8];
-static uint16_t cursor_x_pos;
-static uint16_t cursor_y_pos;
-static bool pen_up_down;
+uint16_t cursor_x_pos = 0x01;
+uint16_t cursor_y_pos = 0x01;
+uint16_t pen_up_down;
 
 void init_display_mem(void) {
 	for(uint8_t i = 0; i < 102; i++) {
