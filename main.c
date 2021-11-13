@@ -8,10 +8,22 @@
 queue_t input_queue;
 queue_t display_mem_semaphore;
 
-void gpio_init(void);
+void init_gpio(void);
 int main(void);
 
 void init_gpio(void) {
+	
+	RCC->IOPENR |= RCC_IOPENR_GPIOAEN; 
+	RCC->IOPENR |= RCC_IOPENR_GPIOBEN; 
+	RCC->IOPENR |= RCC_IOPENR_GPIOCEN; 
+	GPIOA->MODER &= ~(GPIO_MODER_MODE4_Msk); //These lines enable the select line for the SPI 
+	GPIOA->MODER |= GPIO_MODER_MODE4_0; 
+	GPIOA->MODER &= ~(GPIO_MODER_MODE5_Msk); //These Lines enable the SPI Clock 
+	GPIOA->MODER |= 2 << GPIO_MODER_MODE5_Pos; 
+	GPIOA->MODER &= ~(GPIO_MODER_MODE7_Msk); //These Lines enable the data line for the SPI 
+	GPIOA->MODER |= 2 << GPIO_MODER_MODE7_Pos; 
+	
+	
 	GPIOC->MODER &= ~(GPIO_MODER_MODE13_Msk); //Enable GPIO C13 for the pen button
 	GPIOC->MODER |= GPIO_MODER_MODE13_0;
 	

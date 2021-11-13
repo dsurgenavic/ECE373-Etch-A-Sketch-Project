@@ -3,7 +3,7 @@
 #include "storage.h"
 extern queue_t display_mem_semaphore;
 
-void init_gpio(void) { 
+/*void init_gpio(void) { 
 	RCC->IOPENR |= RCC_IOPENR_GPIOAEN; 
 	GPIOA->MODER &= ~(GPIO_MODER_MODE4_Msk); //These lines enable the select line for the SPI 
 	GPIOA->MODER |= GPIO_MODER_MODE4_0; 
@@ -17,8 +17,8 @@ void init_gpio(void) {
 	GPIOA->MODER |= GPIO_MODER_MODE8_0; 
 	GPIOA->ODR &= ~(1U << 8); //Assert reset high 
   return; 
-} 
-*/
+} */
+
   
 void init_spi(void) { 
 	RCC->APB2ENR |= RCC_APB2ENR_SPI1EN; 
