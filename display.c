@@ -18,6 +18,7 @@ void init_gpio(void) {
 	GPIOA->ODR &= ~(1U << 8); //Assert reset high 
   return; 
 } 
+*/
   
 void init_spi(void) { 
 	RCC->APB2ENR |= RCC_APB2ENR_SPI1EN; 
