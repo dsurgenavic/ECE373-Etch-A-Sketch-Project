@@ -63,9 +63,9 @@ int main(void) {
 	init_display_mem();
 	init_knobs();
 	//initialization for display
-	
 	init_spi();
 	init_dogs();
+	clear_dogs();
 	
 	while(1) {
 		update_inputs();

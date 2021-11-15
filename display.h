@@ -27,5 +27,5 @@ void init_gpio(void);
 void init_spi(void); 
 void send_packet(uint32_t packet, uint8_t CD); 
 void init_dogs(void);
-
+void clear_dogs(void);
 void draw_dogs(void);

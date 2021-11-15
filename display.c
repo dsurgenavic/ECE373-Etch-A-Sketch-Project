@@ -49,7 +49,7 @@ void init_dogs() {
 	send_packet(0xFA, 0); 
 	send_packet(0x90, 0); 
 	send_packet(0xAF, 0); 
-	return; 
+	return;
 } 
 
 void send_packet(uint32_t packet, uint8_t CD) {  
@@ -67,6 +67,19 @@ void send_packet(uint32_t packet, uint8_t CD) {
 	return; 
 } 
 
+void clear_dogs() {
+	for(volatile uint32_t i = 0; i < 8; i++) {
+		send_packet(0xB0 | i, 0);
+		for(volatile uint32_t j = 0; j < 102; j++) {
+			volatile uint32_t lsb = j & 0x0F;
+			volatile uint32_t msb = ((j & 0xF0) >> 4) | 0x10;
+			send_packet(lsb, 0); 
+			send_packet(msb, 0); 
+			send_packet(0x00, 1);
+			
+		}
+	}
+}
 
 void draw_dogs(){
 	/*bool check = write_q(&display_mem_semaphore, 1);
