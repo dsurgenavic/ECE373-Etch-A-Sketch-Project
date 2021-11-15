@@ -25,18 +25,25 @@ void update_inputs(void) {
 	e_lrqb = update_btn(&lrqb);
 	e_pud = update_btn(&pen_ud_btn);
 	
+	uint16_t message;
+	
 	if(e_udqa == ACTIVATING_EDGE && e_udqb == INACTIVE) {
-		write_q(&input_queue, 0);
+		message = 0;
+		write_q(&input_queue, message);
 	} else if(e_udqa == INACTIVE && e_udqb == ACTIVATING_EDGE) {
-		write_q(&input_queue, 1);
+		message = 1;
+		write_q(&input_queue, message);
 	}
 	if(e_lrqa == ACTIVATING_EDGE && e_lrqb == INACTIVE) {
-		write_q(&input_queue, 2);
+		message = 2;
+		write_q(&input_queue, message);
 	} else if(e_lrqa == INACTIVE && e_lrqb == ACTIVATING_EDGE) {
-		write_q(&input_queue, 3);
+		message = 3;
+		write_q(&input_queue, message);
 	}
 	if(e_pud == ACTIVATING_EDGE) {
-		write_q(&input_queue, 4);
+		message = 4;
+		write_q(&input_queue, message);
 	}
 }
 

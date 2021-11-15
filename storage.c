@@ -1,8 +1,8 @@
 #include "storage.h"
 
 uint8_t display_mem[102][8];
-uint16_t cursor_x_pos = 0x01;
-uint16_t cursor_y_pos = 0x01;
+uint16_t cursor_x_pos;
+uint16_t cursor_y_pos;
 uint16_t pen_up_down;
 
 void init_display_mem(void) {
@@ -43,7 +43,7 @@ void toggle_pen(void) {
 
 void write_storage(void) {
 	uint16_t page = cursor_y_pos / 8;
-	uint16_t page_y = cursor_y_pos % 8;
+	uint16_t page_y = (cursor_y_pos % 8) + 1;
 	
 	bool check = write_q(&display_mem_semaphore, 1);
 	if(!check) return;

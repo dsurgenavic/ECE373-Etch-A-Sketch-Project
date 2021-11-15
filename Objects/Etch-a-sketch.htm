@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\Etch-a-sketch.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\Etch-a-sketch.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6160001: Last Updated: Sun Nov 14 22:02:54 2021
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6160001: Last Updated: Sun Nov 14 22:36:34 2021
 <BR><P>
 <H3>Maximum Stack Usage =         96 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -731,7 +731,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[5a]"></a>update_storage</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, storage.o(.text.update_storage))
-<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = update_storage &rArr; write_storage &rArr; write_q
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = update_storage &rArr; write_storage &rArr; write_q
 </UL>
 <BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_storage
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_cursor_location
@@ -747,8 +747,8 @@ Global Symbols
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_storage
 </UL>
 
-<P><STRONG><a name="[61]"></a>write_storage</STRONG> (Thumb, 84 bytes, Stack size 24 bytes, storage.o(.text.write_storage))
-<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = write_storage &rArr; write_q
+<P><STRONG><a name="[61]"></a>write_storage</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, storage.o(.text.write_storage))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = write_storage &rArr; write_q
 </UL>
 <BR>[Calls]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_q
 <LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_q

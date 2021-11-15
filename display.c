@@ -45,7 +45,7 @@ void init_dogs() {
 	send_packet(0x2F, 0); 
 	send_packet(0x27, 0); 
 	send_packet(0x81, 0); 
-	send_packet(0x10, 0); 
+	send_packet(0x08, 0); 
 	send_packet(0xFA, 0); 
 	send_packet(0x90, 0); 
 	send_packet(0xAF, 0); 
