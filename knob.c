@@ -45,6 +45,11 @@ void update_inputs(void) {
 		message = 4;
 		write_q(&input_queue, message);
 	}
+	
+	if(e_udqa == ACTIVATING_EDGE) {
+		GPIOC->ODR ^= 1<<8;
+		GPIOC->ODR ^= 1<<8;
+	}
 }
 
 void init_knobs(void){

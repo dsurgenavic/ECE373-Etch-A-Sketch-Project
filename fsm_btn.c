@@ -4,7 +4,7 @@
 #include <stdint.h>
 #include "fsm_btn.h"
 #include <assert.h>
-extern void gpio_init(void);
+//extern void gpio_init(void);
 
 // Initializer:
 void init_btn(uint32_t mask_for_btn, 
