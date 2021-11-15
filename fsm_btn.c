@@ -4,14 +4,14 @@
 #include <stdint.h>
 #include "fsm_btn.h"
 #include <assert.h>
-extern void gpio_init(void);
+extern void init_gpio(void);
 
 // Initializer:
 void init_btn(uint32_t mask_for_btn, 
               volatile uint32_t *pin_ptr, 
               struct btn_struct *pb)  
 {
-	//init_gpio();
+	init_gpio();
 	pb->state = UP;
 	pb->mask_for_btn = mask_for_btn;
 	pb->pin_ptr = pin_ptr;
