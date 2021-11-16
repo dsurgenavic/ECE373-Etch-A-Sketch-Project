@@ -4,19 +4,31 @@
 
 extern queue_t input_queue;
 
-static struct btn_struct udqa;
-static struct btn_struct udqb;
-static struct btn_struct lrqa;
-static struct btn_struct lrqb;
+static struct btn_struct udqa = {
+		.mask_for_btn= 0<<0, 
+		.pin_ptr = &(GPIOB->IDR),
+		.state = UP };
+static struct btn_struct udqb = {
+		.mask_for_btn= 0<<0, 
+		.pin_ptr = &(GPIOB->IDR),
+		.state = UP };
+static struct btn_struct lrqa = {
+		.mask_for_btn= 0<<0, 
+		.pin_ptr = &(GPIOB->IDR),
+		.state = UP };
+static struct btn_struct lrqb = {
+		.mask_for_btn= 0<<0, 
+		.pin_ptr = &(GPIOB->IDR),
+		.state = UP };
 
 static struct btn_struct pen_ud_btn;
 
-static enum btn_edge e_udqa = INACTIVE;
-static enum btn_edge e_udqb = INACTIVE;
-static enum btn_edge e_lrqa = INACTIVE;
-static enum btn_edge e_lrqb = INACTIVE;
+static enum btn_edge e_udqa;
+static enum btn_edge e_udqb;
+static enum btn_edge e_lrqa;
+static enum btn_edge e_lrqb;
 
-static enum btn_edge e_pud = INACTIVE;
+static enum btn_edge e_pud;
 
 void update_inputs(void) {
 	e_udqa = update_btn(&udqa);
@@ -44,11 +56,6 @@ void update_inputs(void) {
 	if(e_pud == ACTIVATING_EDGE) {
 		message = 4;
 		write_q(&input_queue, message);
-	}
-	
-	if(e_udqa == ACTIVATING_EDGE) {
-		GPIOC->ODR ^= 1<<8;
-		GPIOC->ODR ^= 1<<8;
 	}
 }
 

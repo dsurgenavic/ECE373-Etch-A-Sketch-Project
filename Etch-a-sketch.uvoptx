@@ -195,6 +195,11 @@
           <WinNumber>1</WinNumber>
           <ItemText>\\Etch_a_sketch\storage.c\cursor_y_pos</ItemText>
         </Ww>
+        <Ww>
+          <count>9</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>display_mem</ItemText>
+        </Ww>
       </WatchWindow1>
       <MemoryWindow1>
         <Mm>

@@ -33,24 +33,24 @@ enum btn_edge update_btn(struct btn_struct *pb)
     {
     case (UP):    
         if (b == BTN_ACTIVE) { pb->state = MAYBE_PRESSED; e = INACTIVE;}
-        else                 { pb->state = UP; e = INACTIVE;}
+		else { pb->state = UP; e = INACTIVE;}
+		break;
+    case (MAYBE_PRESSED):
+        if (b == BTN_ACTIVE){ pb->state = DOWN; e = ACTIVATING_EDGE;}
+        else                { pb->state = UP; e = INACTIVE;}
+		break;
+    case (DOWN):
+        if (b == BTN_ACTIVE) { pb->state = DOWN; e = ACTIVE;}
+        else                 { pb->state = MAYBE_RELEASED; e = ACTIVE;}
         break;
-        case (MAYBE_PRESSED):
-                if (b == BTN_ACTIVE){ pb->state = DOWN; e = ACTIVATING_EDGE;}
-                else                { pb->state = UP; e = INACTIVE;}
+    case (MAYBE_RELEASED):
+        if (b == BTN_ACTIVE) { pb->state = DOWN; e = ACTIVE;}
+        else                 { pb->state = UP; e = DEACTIVATING_EDGE;}
         break;
-        case (DOWN):
-                if (b == BTN_ACTIVE) { pb->state = DOWN; e = ACTIVE;}
-                else                 { pb->state = MAYBE_RELEASED; e = ACTIVE;}
-        break;
-        case (MAYBE_RELEASED):
-                if (b == BTN_ACTIVE) { pb->state = DOWN; e = ACTIVE;}
-                else                 { pb->state = UP; e = DEACTIVATING_EDGE;}
-        break;
-        default:  // Required by MISRA - accept the warning.
-             pb->state = UP;
-			 e = INACTIVE;
-             assert(0 && "Unhandled special enum constant!"); // In debug phase - crash!
+    default:  // Required by MISRA - accept the warning.
+        pb->state = UP;
+		e = INACTIVE;
+        assert(0 && "Unhandled special enum constant!"); // In debug phase - crash!
     }
 	return e;
  }

@@ -15,7 +15,8 @@ void init_display_mem(void) {
 
 void update_cursor_location(void) {
 	int16_t data;
-	if(!read_q(&input_queue, &data)) return;
+	bool check = read_q(&input_queue, &data);
+	if(!check) {return;}
 	switch(data){
 		case(0): //TODO: Change '0' to x knob turning clockwise
 			cursor_y_pos = (cursor_y_pos >= 101) ? 101 : (cursor_y_pos + 1);

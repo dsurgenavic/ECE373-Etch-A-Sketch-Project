@@ -28,23 +28,23 @@ void init_gpio(void) {
 	GPIOC->MODER &= ~(GPIO_MODER_MODE13_Msk); //Enable GPIO C13 for the pen button
 	GPIOC->MODER |= GPIO_MODER_MODE13_0;
 	GPIOC->PUPDR &= ~GPIO_PUPDR_PUPD13_Msk;
-    GPIOC->PUPDR |= 0x01 << GPIO_PUPDR_PUPD13_Pos;
+    GPIOC->PUPDR |= 1 << GPIO_PUPDR_PUPD13_Pos;
 	
 	GPIOB->MODER &= ~(GPIO_MODER_MODE1_Msk); //Enable GPIO B1 & B2 for one of the buttons
-	GPIOB->MODER |= 0x00 << GPIO_MODER_MODE1_Pos;
+	GPIOB->MODER |= 1 << GPIO_MODER_MODE1_Pos;
 	GPIOB->PUPDR &= ~GPIO_PUPDR_PUPD1_Msk;
     GPIOB->PUPDR |= 0x01 << GPIO_PUPDR_PUPD1_Pos;
 	GPIOB->MODER &= ~(GPIO_MODER_MODE2_Msk);
-	GPIOB->MODER |= 0x00 << GPIO_MODER_MODE2_Pos;
+	GPIOB->MODER |= 1 << GPIO_MODER_MODE2_Pos;
     GPIOB->PUPDR &= ~GPIO_PUPDR_PUPD2_Msk;
     GPIOB->PUPDR |= 0x01 << GPIO_PUPDR_PUPD2_Pos;
 	
 	GPIOB->MODER &= ~(GPIO_MODER_MODE3_Msk); //Enable GPIO B3 & B4 for the other button
-	GPIOB->MODER |= 0x00 << GPIO_MODER_MODE3_Pos;
+	GPIOB->MODER |= 1 << GPIO_MODER_MODE3_Pos;
     GPIOB->PUPDR &= ~GPIO_PUPDR_PUPD3_Msk;
     GPIOB->PUPDR |= 0x01 << GPIO_PUPDR_PUPD3_Pos;
 	GPIOB->MODER &= ~(GPIO_MODER_MODE4_Msk);
-	GPIOB->MODER |= 0x00 << GPIO_MODER_MODE4_Pos;
+	GPIOB->MODER |= 1 << GPIO_MODER_MODE4_Pos;
     GPIOB->PUPDR &= ~GPIO_PUPDR_PUPD4_Msk;
     GPIOB->PUPDR |= 0x01 << GPIO_PUPDR_PUPD4_Pos;
 	
@@ -56,6 +56,7 @@ void init_gpio(void) {
 	
 	GPIOC->MODER &= ~(GPIO_MODER_MODE8_Msk);
 	GPIOC->MODER |= GPIO_MODER_MODE8_0;
+	GPIOC->ODR &= ~(1 << 8);
 	return;
 }
 
@@ -73,8 +74,6 @@ int main(void) {
 	while(1) {
 		update_inputs();
 		update_storage();
-		update_inputs();
 		draw_dogs();
-		update_inputs();
 	}
 }
