@@ -112,7 +112,11 @@ void draw_dogs(){
 	send_packet(lsb, 0); 
 	send_packet(msb, 0);
 	
+	bool check = write_q(&display_mem_semaphore, 1);
+	if(!check) {return;}
 	send_packet(display_mem[cursor_x_pos][page], 1);
+	int16_t dummy;
+	check = read_q(&display_mem_semaphore, &dummy);
 	
 }
 

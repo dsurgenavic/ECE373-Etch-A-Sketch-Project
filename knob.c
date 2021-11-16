@@ -6,22 +6,25 @@ extern queue_t input_queue;
 
 static struct btn_struct udqa = {
 		.mask_for_btn= 0<<0, 
-		.pin_ptr = &(GPIOB->IDR),
+		.pin_ptr = &(GPIOC->IDR),
 		.state = UP };
 static struct btn_struct udqb = {
 		.mask_for_btn= 0<<0, 
-		.pin_ptr = &(GPIOB->IDR),
+		.pin_ptr = &(GPIOC->IDR),
 		.state = UP };
 static struct btn_struct lrqa = {
 		.mask_for_btn= 0<<0, 
-		.pin_ptr = &(GPIOB->IDR),
+		.pin_ptr = &(GPIOC->IDR),
 		.state = UP };
 static struct btn_struct lrqb = {
 		.mask_for_btn= 0<<0, 
-		.pin_ptr = &(GPIOB->IDR),
+		.pin_ptr = &(GPIOC->IDR),
 		.state = UP };
 
-static struct btn_struct pen_ud_btn;
+static struct btn_struct pen_ud_btn = {
+		.mask_for_btn= 0<<0, 
+		.pin_ptr = &(GPIOC->IDR),
+		.state = UP };
 
 static enum btn_edge e_udqa;
 static enum btn_edge e_udqb;
@@ -60,9 +63,9 @@ void update_inputs(void) {
 }
 
 void init_knobs(void){
-	init_btn(1<<1, &(GPIOB->IDR), &udqa);
-	init_btn(1<<2, &(GPIOB->IDR), &udqb);
-	init_btn(1<<3, &(GPIOB->IDR), &lrqa);
-	init_btn(1<<4, &(GPIOB->IDR), &lrqb);
+	init_btn(1<<0, &(GPIOC->IDR), &udqa);
+	init_btn(1<<1, &(GPIOC->IDR), &udqb);
+	init_btn(1<<2, &(GPIOC->IDR), &lrqa);
+	init_btn(1<<3, &(GPIOC->IDR), &lrqb);
 	init_btn(1<<13, &(GPIOC->IDR), &pen_ud_btn);
 }

@@ -1,4 +1,5 @@
 #include "stm32l053xx.h"
+#include "stdint.h"
 #include "fsm_btn.h"
 #include "storage.h"
 #include "queue.h"
@@ -14,7 +15,6 @@ int main(void);
 void init_gpio(void) {
 	
 	RCC->IOPENR |= RCC_IOPENR_GPIOAEN; 
-	RCC->IOPENR |= RCC_IOPENR_GPIOBEN; 
 	RCC->IOPENR |= RCC_IOPENR_GPIOCEN;
 	
 	GPIOA->MODER &= ~(GPIO_MODER_MODE4_Msk); //These lines enable the select line for the SPI 
@@ -28,25 +28,25 @@ void init_gpio(void) {
 	GPIOC->MODER &= ~(GPIO_MODER_MODE13_Msk); //Enable GPIO C13 for the pen button
 	GPIOC->MODER |= 1 << GPIO_MODER_MODE13_Pos;
 	GPIOC->PUPDR &= ~GPIO_PUPDR_PUPD13_Msk;
-    GPIOC->PUPDR |= 1 << GPIO_PUPDR_PUPD13_Pos;
+    GPIOC->PUPDR |= 0x01 << GPIO_PUPDR_PUPD13_Pos;
 	
-	GPIOB->MODER &= ~(GPIO_MODER_MODE1_Msk); //Enable GPIO B1 & B2 for one of the buttons
-	GPIOB->MODER |= 1 << GPIO_MODER_MODE1_Pos;
-	GPIOB->PUPDR &= ~GPIO_PUPDR_PUPD1_Msk;
-    GPIOB->PUPDR |= 0x01 << GPIO_PUPDR_PUPD1_Pos;
-	GPIOB->MODER &= ~(GPIO_MODER_MODE2_Msk);
-	GPIOB->MODER |= 1 << GPIO_MODER_MODE2_Pos;
-    GPIOB->PUPDR &= ~GPIO_PUPDR_PUPD2_Msk;
-    GPIOB->PUPDR |= 0x01 << GPIO_PUPDR_PUPD2_Pos;
+	GPIOC->MODER &= ~(GPIO_MODER_MODE0_Msk); //Enable GPIO C1 & C2 for one of the buttons
+	GPIOC->MODER |= 1 << GPIO_MODER_MODE0_Pos;
+	GPIOC->PUPDR &= ~GPIO_PUPDR_PUPD0_Msk;
+    GPIOC->PUPDR |= 0x01 << GPIO_PUPDR_PUPD0_Pos;
+	GPIOC->MODER &= ~(GPIO_MODER_MODE1_Msk);
+	GPIOC->MODER |= 1 << GPIO_MODER_MODE1_Pos;
+    GPIOC->PUPDR &= ~GPIO_PUPDR_PUPD1_Msk;
+    GPIOC->PUPDR |= 0x01 << GPIO_PUPDR_PUPD1_Pos;
 	
-	GPIOB->MODER &= ~(GPIO_MODER_MODE3_Msk); //Enable GPIO B3 & B4 for the other button
-	GPIOB->MODER |= 1 << GPIO_MODER_MODE3_Pos;
-    GPIOB->PUPDR &= ~GPIO_PUPDR_PUPD3_Msk;
-    GPIOB->PUPDR |= 0x01 << GPIO_PUPDR_PUPD3_Pos;
-	GPIOB->MODER &= ~(GPIO_MODER_MODE4_Msk);
-	GPIOB->MODER |= 1 << GPIO_MODER_MODE4_Pos;
-    GPIOB->PUPDR &= ~GPIO_PUPDR_PUPD4_Msk;
-    GPIOB->PUPDR |= 0x01 << GPIO_PUPDR_PUPD4_Pos;
+	GPIOC->MODER &= ~(GPIO_MODER_MODE3_Msk); //Enable GPIO C3 & C4 for the other button
+	GPIOC->MODER |= 1 << GPIO_MODER_MODE3_Pos;
+    GPIOC->PUPDR &= ~GPIO_PUPDR_PUPD3_Msk;
+    GPIOC->PUPDR |= 0x01 << GPIO_PUPDR_PUPD3_Pos;
+	GPIOC->MODER &= ~(GPIO_MODER_MODE2_Msk);
+	GPIOC->MODER |= 1 << GPIO_MODER_MODE2_Pos;
+    GPIOC->PUPDR &= ~GPIO_PUPDR_PUPD2_Msk;
+    GPIOC->PUPDR |= 0x01 << GPIO_PUPDR_PUPD2_Pos;
 	
 	GPIOA->MODER &= ~(GPIO_MODER_MODE6_Msk); //Enable GPIO A6 for the CD line on the display
 	GPIOA->MODER |= GPIO_MODER_MODE6_0;

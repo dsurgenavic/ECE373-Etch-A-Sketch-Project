@@ -20,7 +20,7 @@ void init_btn(uint32_t mask_for_btn,
 // Collect input from HW and translate to state-input-alphabet 
 enum btn_level read_btn(struct btn_struct *pb) // Correct for ACTIVE-LOW.
 {
-    if ((GPIOB->IDR & pb->mask_for_btn) == 0) return BTN_ACTIVE;
+    if ((*(pb->pin_ptr) & pb->mask_for_btn) == 0) return BTN_ACTIVE;
     else return BTN_INACTIVE;
 }
 

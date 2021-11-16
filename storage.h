@@ -22,7 +22,6 @@ void init_display_mem(void);
 //and will blink an area in the display array depending on the coordinates.a
 void update_cursor_location(void);
 
-void toggle_pen(void);
 
 //This function will update the display array.
 //It will use the cursor's current location and whether the pen
