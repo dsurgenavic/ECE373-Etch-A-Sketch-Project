@@ -26,7 +26,7 @@ void init_gpio(void) {
 	
 	
 	GPIOC->MODER &= ~(GPIO_MODER_MODE13_Msk); //Enable GPIO C13 for the pen button
-	GPIOC->MODER |= GPIO_MODER_MODE13_0;
+	GPIOC->MODER |= 1 << GPIO_MODER_MODE13_Pos;
 	GPIOC->PUPDR &= ~GPIO_PUPDR_PUPD13_Msk;
     GPIOC->PUPDR |= 1 << GPIO_PUPDR_PUPD13_Pos;
 	
@@ -53,10 +53,6 @@ void init_gpio(void) {
 	GPIOA->MODER &= ~(GPIO_MODER_MODE8_Msk); //Enable GPIO A8 to act as a reset switch for the display
 	GPIOA->MODER |= GPIO_MODER_MODE8_0;
 	GPIOA->ODR &= ~(1U << 8); //Assert reset high
-	
-	GPIOC->MODER &= ~(GPIO_MODER_MODE8_Msk);
-	GPIOC->MODER |= GPIO_MODER_MODE8_0;
-	GPIOC->ODR &= ~(1 << 8);
 	return;
 }
 
