@@ -47,6 +47,9 @@ void update_cursor_location(void) {
 	}
 }
 
+
+
+
 void write_storage(void) {
 	uint16_t page = cursor_y_pos / 8;
 	uint16_t page_y = (cursor_y_pos % 8);
@@ -64,6 +67,9 @@ void write_storage(void) {
 	int16_t dummy;
 	check = read_q(&display_mem_semaphore, &dummy);
 }
+
+
+
 
 void update_storage(void) {
 	update_cursor_location();

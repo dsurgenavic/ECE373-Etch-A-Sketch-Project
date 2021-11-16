@@ -62,6 +62,9 @@ void update_inputs(void) {
 	}
 }
 
+
+
+
 void init_knobs(void){
 	init_btn(1<<0, &(GPIOC->IDR), &udqa);
 	init_btn(1<<1, &(GPIOC->IDR), &udqb);
